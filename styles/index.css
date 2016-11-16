@@ -1,0 +1,13 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 40px;
+}
+
+img {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
