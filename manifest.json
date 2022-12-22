@@ -1,12 +1,18 @@
 {
- 	"manifest_version": 2,
- 	"name": "Name of your extension",
- 	"version": "1.0",
-	"description": "A short description of your extension which will appear in the Chrome web store.",
-	"icons": {
-		"16": "images/world-1.png"
-	},
-  	"chrome_url_overrides" : {
-    	"newtab": "index.html"
-  	}
+  "manifest_version": 3,
+  "name": "Name of your extension",
+  "version": "1.0",
+  "description": "A short description of your extension which will appear in the Chrome web store.",
+  "icons": {
+    "16": "images/world-1.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/index.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
